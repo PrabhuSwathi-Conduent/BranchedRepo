@@ -47,3 +47,9 @@ secrets.properties
 *.iml
 .vscode/
 *.code-workspace
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+.cache/
