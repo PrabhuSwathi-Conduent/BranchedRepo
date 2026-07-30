@@ -1,0 +1,33 @@
+2026-07-30 21:34:45.192 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\52254435\.katalon\packages\KSE-10.4.3\configuration\org.eclipse.osgi\133\0\.cp\resources\logback\logback-execution.xml
+2026-07-30 21:34:45.192 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\52254435\git\BranchedRepo\Include\config\log.properties
+2026-07-30 21:34:46.228 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Smoke
+2026-07-30 21:34:46.417 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = KatlonGmail
+2026-07-30 21:34:46.419 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = BranchedRepo
+2026-07-30 21:34:46.421 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = 52254435 - COREPW0LX6YZ
+2026-07-30 21:34:46.425 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-07-30 21:34:46.427 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.1.181
+2026-07-30 21:34:46.429 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.3.0
+2026-07-30 21:34:47.414 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-30 21:34:47.414 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC-102-sample-test
+2026-07-30 21:34:48.092 DEBUG testcase.TC-102-sample-test              - 1: openBrowser("")
+2026-07-30 21:34:48.611 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-07-30 21:34:48.731 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Jul 30, 2026 9:34:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 30, 2026 9:34:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.188. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-07-30 21:34:53.775 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 76d43c7a219cc75dec3a4dacccd4c5e8
+2026-07-30 21:34:53.775 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 150.0.7871.188
+2026-07-30 21:34:53.775 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-30 21:34:53.775 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2026-07-30 21:34:53.792 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-30 21:34:53.869 DEBUG testcase.TC-102-sample-test              - 2: navigateToUrl("https://www.google.com/")
+2026-07-30 21:34:55.329 DEBUG testcase.TC-102-sample-test              - 3: click(findTestObject("Object Repository/Test-102/Page_Google/a_Sign in"))
+2026-07-30 21:34:57.781 DEBUG testcase.TC-102-sample-test              - 4: setText(findTestObject("Object Repository/Test-102/Page_Sign in - Google Accounts/input_with your Google Account. This accoun_706023"), "test@test.com")
+2026-07-30 21:34:58.825 DEBUG testcase.TC-102-sample-test              - 5: click(findTestObject("Object Repository/Test-102/Page_Sign in - Google Accounts/span_Next"))
+2026-07-30 21:34:59.441 DEBUG testcase.TC-102-sample-test              - 6: click(findTestObject("Object Repository/Test-102/Page_Couldnt sign you in/a_Learn more_WpHeLc VfPpkd-mRLv6 VfPpkd-RLmnJb"))
+2026-07-30 21:35:01.988 DEBUG testcase.TC-102-sample-test              - 7: closeBrowser()
+2026-07-30 21:35:02.519 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC-102-sample-test
+2026-07-30 21:35:02.613 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-07-30 21:35:02.613 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/Smoke
+2026-07-30 21:35:02.613 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
