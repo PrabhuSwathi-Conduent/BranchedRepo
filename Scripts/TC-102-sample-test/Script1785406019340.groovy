@@ -17,3 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.URL)
+
+WebUI.click(findTestObject('Object Repository/Test-102/Page_Google/a_Sign in'))
+
+WebUI.setText(findTestObject('Object Repository/Test-102/Page_Sign in - Google Accounts/input_with your Google Account. This accoun_706023'), 
+    'test@test.com')
+
+WebUI.click(findTestObject('Object Repository/Test-102/Page_Sign in - Google Accounts/span_Next'))
+
+WebUI.click(findTestObject('Object Repository/Test-102/Page_Couldnt sign you in/a_Learn more_WpHeLc VfPpkd-mRLv6 VfPpkd-RLmnJb'))
+
+WebUI.closeBrowser()
+
