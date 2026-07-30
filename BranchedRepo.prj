@@ -3,10 +3,10 @@
    <description></description>
    <name>BranchedRepo</name>
    <tag></tag>
-   <UUID>5e8f4136-8ab7-4f08-8e0d-dd3fb2a80e19</UUID>
+   <UUID>dc39caac-2b76-4c4a-8886-8861735b58bc</UUID>
    <createdEdition>ENTERPRISE</createdEdition>
    <createdVersion>10.4.3</createdVersion>
-   <freeLicense>false</freeLicense>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>10.4.3</modifiedVersion>

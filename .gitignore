@@ -1,4 +1,52 @@
+# ============================================================
+# Katalon Studio — .gitignore
+# ============================================================
 
+# Test Reports (auto-generated, uploaded as CI artifacts)
+Reports/
+*.rp
+
+# Katalon Studio Settings & Temp Files
+.settings/
+.classpath
+.project
+*.prefs
+bin/
+build/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Katalon Local Config (machine-specific, do not share)
+Libs/
+Plugins/
+katalon_plugins/
+*.lnk
+
+# Katalon Project Cache
+.katalon/
+
+# Screenshots (captured on test failure)
+Screenshots/
+
+# OS-generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Sensitive / Secret Files — NEVER commit these
+*.key
+*.pem
+*.env
+secrets.properties
+
+# IDE & Editor Files
+.idea/
+*.iml
+.vscode/
+*.code-workspace
 /bin/
 /Libs/
 /.settings/

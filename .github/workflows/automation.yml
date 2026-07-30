@@ -1,0 +1,203 @@
+
+name: Katalon Studio Automation CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - release/**
+      - feature/**
+      - fix/**
+      - hotfix/**
+  pull_request:
+    branches:
+      - main
+      - develop
+      - release/**
+  workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Test Suite to execute (e.g., Test Suites/Regression)'
+        required: false
+        default: 'Test Suites/Smoke'
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'qa'
+        type: choice
+        options:
+          - dev
+          - qa
+          - staging
+          - prod
+
+env:
+  KATALON_VERSION: '10.1.0'
+  DEFAULT_BROWSER: 'Chrome'
+  REPORT_DIR: Reports
+
+jobs:
+
+  # JOB 1: feature/** and fix/** → Smoke Tests
+  smoke-tests:
+    name: 🔥 Smoke Tests (feature/fix branches)
+    runs-on: ubuntu-latest
+    if: |
+      startsWith(github.ref, 'refs/heads/feature/') ||
+      startsWith(github.ref, 'refs/heads/fix/')
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+      - name: 🖥 Start Virtual Display (Xvfb)
+        run: |
+          sudo apt-get install -y xvfb
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      - name: 🚀 Run Katalon Studio - Smoke Tests
+        uses: katalon-studio/katalon-studio-github-action@v4.0
+        with:
+          version: '${{ env.KATALON_VERSION }}'
+          projectPath: '${{ github.workspace }}'
+          args: >
+            -noSplash -runMode=console
+            -testSuitePath="Test Suites/Smoke"
+            -browserType="${{ env.DEFAULT_BROWSER }}"
+            -executionProfile="dev"
+            -apiKey=${{ secrets.KATALON_API_KEY }}
+      - name: 📊 Upload Smoke Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-test-reports-${{ github.run_number }}
+          path: ${{ env.REPORT_DIR }}/
+          retention-days: 7
+
+  # JOB 2: develop → Full Regression Tests
+  regression-tests:
+    name: 🔁 Regression Tests (develop branch)
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+      - name: 🖥 Start Virtual Display (Xvfb)
+        run: |
+          sudo apt-get install -y xvfb
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      - name: 🚀 Run Katalon Studio - Regression Tests
+        uses: katalon-studio/katalon-studio-github-action@v4.0
+        with:
+          version: '${{ env.KATALON_VERSION }}'
+          projectPath: '${{ github.workspace }}'
+          args: >
+            -noSplash -runMode=console
+            -testSuitePath="Test Suites/Regression"
+            -browserType="${{ env.DEFAULT_BROWSER }}"
+            -executionProfile="qa"
+            -apiKey=${{ secrets.KATALON_API_KEY }}
+      - name: 📊 Upload Regression Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regression-test-reports-${{ github.run_number }}
+          path: ${{ env.REPORT_DIR }}/
+          retention-days: 14
+
+  # JOB 3: release/** → Staging Validation
+  staging-tests:
+    name: 🧪 Staging Tests (release branches)
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/heads/release/')
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+      - name: 🖥 Start Virtual Display (Xvfb)
+        run: |
+          sudo apt-get install -y xvfb
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      - name: 🚀 Run Katalon Studio - Staging Tests
+        uses: katalon-studio/katalon-studio-github-action@v4.0
+        with:
+          version: '${{ env.KATALON_VERSION }}'
+          projectPath: '${{ github.workspace }}'
+          args: >
+            -noSplash -runMode=console
+            -testSuitePath="Test Suites/Regression"
+            -browserType="${{ env.DEFAULT_BROWSER }}"
+            -executionProfile="staging"
+            -apiKey=${{ secrets.KATALON_API_KEY }}
+      - name: 📊 Upload Staging Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: staging-test-reports-${{ github.run_number }}
+          path: ${{ env.REPORT_DIR }}/
+          retention-days: 30
+
+  # JOB 4: main → Production Smoke (with approval gate)
+  production-smoke:
+    name: 🏁 Production Smoke Tests (main branch)
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+      - name: 🖥 Start Virtual Display (Xvfb)
+        run: |
+          sudo apt-get install -y xvfb
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      - name: 🚀 Run Katalon Studio - Production Smoke
+        uses: katalon-studio/katalon-studio-github-action@v4.0
+        with:
+          version: '${{ env.KATALON_VERSION }}'
+          projectPath: '${{ github.workspace }}'
+          args: >
+            -noSplash -runMode=console
+            -testSuitePath="Test Suites/Smoke"
+            -browserType="${{ env.DEFAULT_BROWSER }}"
+            -executionProfile="prod"
+            -apiKey=${{ secrets.KATALON_API_KEY }}
+      - name: 📊 Upload Production Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-smoke-reports-${{ github.run_number }}
+          path: ${{ env.REPORT_DIR }}/
+          retention-days: 90
+
+  # JOB 5: Manual trigger → Custom test run
+  manual-run:
+    name: 🖐 Manual Test Run
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+      - name: 🖥 Start Virtual Display (Xvfb)
+        run: |
+          sudo apt-get install -y xvfb
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      - name: 🚀 Run Katalon Studio - Manual Trigger
+        uses: katalon-studio/katalon-studio-github-action@v4.0
+        with:
+          version: '${{ env.KATALON_VERSION }}'
+          projectPath: '${{ github.workspace }}'
+          args: >
+            -noSplash -runMode=console
+            -testSuitePath="${{ github.event.inputs.test_suite }}"
+            -browserType="${{ env.DEFAULT_BROWSER }}"
+            -executionProfile="${{ github.event.inputs.environment }}"
+            -apiKey=${{ secrets.KATALON_API_KEY }}
+      - name: 📊 Upload Manual Run Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: manual-run-reports-${{ github.run_number }}
+          path: ${{ env.REPORT_DIR }}/
+          retention-days: 14
