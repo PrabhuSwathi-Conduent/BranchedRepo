@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Smoke,Chrome 150.0.7871.188,,,30-07-2026 21:34:46,30-07-2026 21:35:02,16.255s,PASSED
+,,,,,,,
+Test Cases/TC-102-sample-test,Chrome 150.0.7871.188,,,30-07-2026 21:34:47,30-07-2026 21:35:02,15.106s,PASSED
+"openBrowser("""")",Chrome 150.0.7871.188,,,30-07-2026 21:34:48,30-07-2026 21:34:53,5.777s,PASSED
+"navigateToUrl(""https://www.google.com/"")",Chrome 150.0.7871.188,,,30-07-2026 21:34:53,30-07-2026 21:34:55,1.458s,PASSED
+"click(findTestObject(""Object Repository/Test-102/Page_Google/a_Sign in""))",Chrome 150.0.7871.188,,,30-07-2026 21:34:55,30-07-2026 21:34:57,2.452s,PASSED
+"setText(findTestObject(""Object Repository/Test-102/Page_Sign in - Google Accounts/input_with your Google Account. This accoun_706023""), ""test@test.com"")",Chrome 150.0.7871.188,,,30-07-2026 21:34:57,30-07-2026 21:34:58,1.042s,PASSED
+"click(findTestObject(""Object Repository/Test-102/Page_Sign in - Google Accounts/span_Next""))",Chrome 150.0.7871.188,,,30-07-2026 21:34:58,30-07-2026 21:34:59,0.615s,PASSED
+"click(findTestObject(""Object Repository/Test-102/Page_Couldnt sign you in/a_Learn more_WpHeLc VfPpkd-mRLv6 VfPpkd-RLmnJb""))",Chrome 150.0.7871.188,,,30-07-2026 21:34:59,30-07-2026 21:35:01,2.546s,PASSED
+closeBrowser(),Chrome 150.0.7871.188,,,30-07-2026 21:35:01,30-07-2026 21:35:02,0.527s,PASSED
