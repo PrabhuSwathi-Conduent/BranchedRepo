@@ -1,0 +1,24 @@
+# ============================================================
+# CODEOWNERS — BranchedRepo
+# Every PR that touches these paths will auto-request review
+# from the listed owner(s).
+# ============================================================
+
+# Global fallback — all files
+*                               @PrabhuSwathi-Conduent
+
+# CI/CD pipeline
+.github/                        @PrabhuSwathi-Conduent
+.github/workflows/              @PrabhuSwathi-Conduent
+
+# Katalon Test Files
+Test Cases/                     @PrabhuSwathi-Conduent
+Test Suites/                    @PrabhuSwathi-Conduent
+Object Repository/              @PrabhuSwathi-Conduent
+Keywords/                       @PrabhuSwathi-Conduent
+
+# Environment Profiles (sensitive — always review)
+Profiles/                       @PrabhuSwathi-Conduent
+
+# Documentation
+README.md                       @PrabhuSwathi-Conduent

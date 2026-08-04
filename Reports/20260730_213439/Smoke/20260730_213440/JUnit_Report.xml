@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke" time="16.162" tests="1" failures="0" errors="0">
+   <testsuite name="Smoke" tests="1" failures="0" errors="0" time="16.162" skipped="0" timestamp="2026-07-30T16:04:46.358Z" hostname="52254435 - COREPW0LX6YZ" id="Test Suites/Smoke">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\52254435\\git\\BranchedRepo\\Reports\\20260730_213439\\Smoke\\20260730_213440"/>
+         <property name="logFiles" value="C:\\Users\\52254435\\git\\BranchedRepo\\Reports\\20260730_213439\\Smoke\\20260730_213440\\console0.log, C:\\Users\\52254435\\git\\BranchedRepo\\Reports\\20260730_213439\\Smoke\\20260730_213440\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="52254435 - COREPW0LX6YZ"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.4.3.0"/>
+         <property name="browser" value="Chrome 150.0.7871.188"/>
+         <property name="userFullName" value="KatlonGmail"/>
+         <property name="hostAddress" value="192.168.1.181"/>
+         <property name="sessionId" value="76d43c7a219cc75dec3a4dacccd4c5e8"/>
+         <property name="projectName" value="BranchedRepo"/>
+         <property name="seleniumVersion" value="4.34.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/TC-102-sample-test" time="15.106" classname="Test Cases/TC-102-sample-test" status="PASSED">
+         <system-out><![CDATA[30-07-2026T21:34:47 - [TEST_CASE][PASSED] - Test Cases/TC-102-sample-test: Test Cases/TC-102-sample-test
+
+30-07-2026T21:34:48 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+30-07-2026T21:34:48 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+30-07-2026T21:34:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+30-07-2026T21:34:53 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+30-07-2026T21:34:53 - [TEST_STEP][PASSED] - navigateToUrl("https://www.google.com/"): Navigate to 'https://www.google.com/' successfully
+
+30-07-2026T21:34:55 - [MESSAGE][PASSED] - Navigate to 'https://www.google.com/' successfully
+
+30-07-2026T21:34:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Test-102/Page_Google/a_Sign in")): Object: 'Object Repository/Test-102/Page_Google/a_Sign in' is clicked on
+
+30-07-2026T21:34:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Test-102/Page_Google/a_Sign in' is clicked on
+
+30-07-2026T21:34:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Test-102/Page_Sign in - Google Accounts/input_with your Google Account. This accoun_706023"), "test@test.com"): Text 'test@test.com' is set on object 'Object Repository/Test-102/Page_Sign in - Google Accounts/input_with your Google Account. This accoun_706023'
+
+30-07-2026T21:34:58 - [MESSAGE][PASSED] - Text 'test@test.com' is set on object 'Object Repository/Test-102/Page_Sign in - Google Accounts/input_with your Google Account. This accoun_706023'
+
+30-07-2026T21:34:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Test-102/Page_Sign in - Google Accounts/span_Next")): Object: 'Object Repository/Test-102/Page_Sign in - Google Accounts/span_Next' is clicked on
+
+30-07-2026T21:34:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Test-102/Page_Sign in - Google Accounts/span_Next' is clicked on
+
+30-07-2026T21:34:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Test-102/Page_Couldnt sign you in/a_Learn more_WpHeLc VfPpkd-mRLv6 VfPpkd-RLmnJb")): Object: 'Object Repository/Test-102/Page_Couldnt sign you in/a_Learn more_WpHeLc VfPpkd-mRLv6 VfPpkd-RLmnJb' is clicked on
+
+30-07-2026T21:35:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Test-102/Page_Couldnt sign you in/a_Learn more_WpHeLc VfPpkd-mRLv6 VfPpkd-RLmnJb' is clicked on
+
+30-07-2026T21:35:01 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+30-07-2026T21:35:02 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[30-07-2026T21:34:46 - [TEST_SUITE][PASSED] - Smoke: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
