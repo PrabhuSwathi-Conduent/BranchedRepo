@@ -36,6 +36,8 @@ env:
   KATALON_VERSION: '10.1.0'
   DEFAULT_BROWSER: 'Chrome'
   REPORT_DIR: Reports
+  NO_AT_BRIDGE: 1                               # ← ADD THIS
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # ← ADD THIS
 
 jobs:
 
