@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_For my personal use</name>
+   <tag></tag>
+   <elementGuidId>28f84a13-9737-4777-841a-00f6cce8af1a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.dropdown-gws-button.variant-primary.size-normal.align-left.valign-below > details > nav.dropdown-menu > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='m3']/div/div/div/div[2]/div/dropdown-button-wrapper/div/details/nav/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=menuitem[name=&quot;Gmail - For my personal use&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>01143ca1-7128-4001-8aca-99c2a4425dff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;theme=glif&amp;source=gafb-gmail_asw-hero-en&amp;hl=en&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=en</value>
+      <webElementGuid>28f3f93e-64a6-4b74-b93a-8e9c9d1c8323</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>menuitem</value>
+      <webElementGuid>9a2f4ecd-27af-4393-8b2a-1bf3d6a770f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Gmail - For my personal use</value>
+      <webElementGuid>d581e723-6d9b-4a02-83cf-dcb41297ddc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-g-event</name>
+      <type>Main</type>
+      <value>gmail_asw: hero #5050-hero</value>
+      <webElementGuid>071621a3-bfa4-4b50-8aee-3bee8de468da</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-g-action</name>
+      <type>Main</type>
+      <value>https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3a%2f%2fmail.google.com%2fmail%2f&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-%5bmodule%5d-create&amp;theme=glif</value>
+      <webElementGuid>adbf6a46-7ea4-4b08-953d-21d9bbcfc2d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-g-label</name>
+      <type>Main</type>
+      <value>https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https://mail.google.com/mail/&amp;flowname=glifwebsignin&amp;flowentry=signup&amp;ec=asw-gmail-[module]-create&amp;theme=glif</value>
+      <webElementGuid>9c85437c-0e57-4ff6-a505-a7a94bdbafa4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>For my personal use</value>
+      <webElementGuid>8351b2ba-044b-4030-b83f-04b6577de4ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;m3&quot;)/div[1]/div[@class=&quot;Grid_grid Template5050Hero_wrapper&quot;]/div[@class=&quot;Grid_column Template5050Hero_content Template5050Hero_fixedRightPadding&quot;]/div[@class=&quot;Text_container Text_body Text_lg Template5050Hero_body&quot;]/div[@class=&quot;ButtonGroup_buttonGroup ButtonGroup_buttonGroupHorizontal button-group-with-dropdown button-group horizontal&quot;]/dropdown-button-wrapper[@class=&quot;dropdown-wrapper&quot;]/div[@class=&quot;dropdown-gws-button variant-primary size-normal align-left valign-below&quot;]/details[1]/nav[@class=&quot;dropdown-menu&quot;]/a[1]</value>
+      <webElementGuid>ee02bb89-d22a-426f-93a6-1898f55e4834</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='m3']/div/div/div/div[2]/div/dropdown-button-wrapper/div/details/nav/a</value>
+      <webElementGuid>d6f7b919-2972-418c-8d39-9c86dbe0e80c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'For my personal use')])[3]</value>
+      <webElementGuid>e1e014b0-bd5e-4a49-9811-0f18de02165e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[3]/following::a[1]</value>
+      <webElementGuid>fbafa0ca-bc11-4b1e-ab33-b9be64109a15</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AI-powered email for everyone'])[1]/following::a[1]</value>
+      <webElementGuid>86a30c6d-604d-4700-b5c4-6bb97198d2de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='For my work or business'])[3]/preceding::a[1]</value>
+      <webElementGuid>d0e11e70-a055-4d90-a823-0acdc4bd94b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='For work'])[3]/preceding::a[2]</value>
+      <webElementGuid>611f6660-d397-4f9b-ab37-4d750f4b6778</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;theme=glif&amp;source=gafb-gmail_asw-hero-en&amp;hl=en&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=en')]</value>
+      <webElementGuid>39c256d6-0a93-4b8d-9806-75339cc0f0ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/dropdown-button-wrapper/div/details/nav/a</value>
+      <webElementGuid>4139a118-08c6-4b22-8f65-d20e1506a724</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'https://accounts.google.com/signup/v2/createaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;ec=asw-gmail-[module]-create&amp;theme=glif&amp;source=gafb-gmail_asw-hero-en&amp;hl=en&amp;ga_region=amer&amp;ga_country=us&amp;ga_lang=en' and (text() = 'For my personal use' or . = 'For my personal use')]</value>
+      <webElementGuid>45053cad-fd9d-4c18-a2a3-382a0418bd40</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
