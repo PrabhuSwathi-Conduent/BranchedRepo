@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Login</description>
+   <name>TC-105</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e258553b-d465-4df9-8ff3-841c3ae22d33</testCaseGuid>
+</TestCaseEntity>
